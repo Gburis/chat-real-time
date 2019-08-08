@@ -1,0 +1,14 @@
+instalação de web socket e como usar
+
+comando npm
+
+npm install socket.io --save
+
+necessario incapsular concexão http e alocana no listen do socket
+
+exemple:
+var server = app.listen(3000, function(){
+    console.log('servidor ON');
+});
+
+require('socket.io').listen(server);

@@ -13,5 +13,5 @@ module.exports.initChat = function(application, req, res, validationResult){
       {apelido: dataForm.apelido, msg: ' acabou de entrar no chat'}
     );
 
-    res.render('chat');
+    res.render('chat', {dataForm: dataForm});
 }
